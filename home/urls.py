@@ -12,6 +12,8 @@ admin.site.index_title="Welcome to this Portal"
 urlpatterns = [
     path('',views.home,name='home'),
     path('about/',views.about,name='about'),
-    path('projects/',views.projects,name='projects'),
     path('contact/',views.contact,name='contact'),
+    path('work/',views.work,name='work'),
+    path('relax/',views.relax,name='relax'),
+    path('beauty/',views.beauty,name='beauty'),
 ]

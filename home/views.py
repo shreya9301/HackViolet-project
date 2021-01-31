@@ -6,8 +6,14 @@ def home(request):
 def about(request):
     return render(request,'about.html')
 
-def projects(request):
-    return render(request,'projects.html')
+def work(request):
+    return render(request,'work.html')    
+
+def relax(request):
+    return render(request,'relax.html')  
+
+def beauty(request):
+    return render(request,'beauty.html') 
 
 def contact(request):
     if request.method=="POST":
