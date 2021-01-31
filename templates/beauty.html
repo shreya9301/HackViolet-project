@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
 
 </head>
-<body class="beauty">
+<body class="beauty" style="background-image:url("{% static 'images/beauty_bck.jpg'%}");">
     <!-- Button trigger modal -->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <div class="container-fluid">
@@ -27,11 +28,11 @@
           </div>
         </div>
       </nav>
-    <div id="accordion" style="margin-top:50px; margin-left:100px; width:75%;">
+    <div id="accordion" style="margin-top:50px; margin-left:200px; width:75%;">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="text-decoration: none;color:black;">
                 HAIR MAINTAINENCE
               </button>
             </h5>
@@ -85,21 +86,21 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;color:black;">
                 SKINCARE ROUTINE
               </button>
             </h5>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-                <img src="images/skincare.jpg" class="img-rounded" alt=".." width="700" height="666" style="margin-left:150px;"> 
+                <img src="{% static 'images/routine.jpeg' %}" class="img-rounded" alt=".." width="700" height="666" style="margin-left:150px;"> 
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;color:black;">
                 MAKEUP TUTORIALS
               </button>
             </h5>
